@@ -29,6 +29,7 @@ class Program
             if(response.IsSuccessStatusCode)
             {
                 var result = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("Transcript of audio: ");
                 Console.WriteLine(result);
             }
             else
